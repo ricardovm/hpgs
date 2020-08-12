@@ -1,0 +1,99 @@
+--------------------------------------------------------
+1. INSTALLING AND UPDATING
+2. USING
+3. CONTACT INFORMATION
+4. COPYING AND LICENSE
+--------------------------------------------------------
+
+
+1. INSTALLING AND UPDATING
+--------------------------
+
+	You can find the latest version of this program at:
+
+		http://www.hpgs.cjb.net
+
+	Extract the compressed file in a directory and go to the hpgs direc-
+	tory:
+
+		$tar xvzf hpgs-X.XX
+		$cd hpgs-X.XX
+
+		(X.XX is the version)
+
+	Before installing,  check if the GhostScript is in the  ``/usr/bin''
+	directory:
+
+		$which gs
+		/usr/bin/gs
+
+	If it is in another directory, modify the hpgs.c and Makefile files,
+	adding the correct directory.
+
+	After, type:
+
+		$make
+
+	This will make the hpgs binary.
+
+	***********************************
+	** PLEASE NOTE!!! PLEASE NOTE!!! **
+	***********************************
+
+	hpgs needs to be installed as ``gs''. The original  ``gs''  needs to
+	be named as ``gs-run'', both in the ``/usr/bin'' directory.
+
+	If this is the first time you instal hpgs, type, as root:
+
+		#make really-install
+
+	If you have an old version of hpgs,  you might have a ``gs.default''
+	file in ``/usr/bin''. This is your GhostScript ``gs''. You will need
+	to remove the  ``/usr/bin/gs''  file and  rename the  ``gs.default''
+	to ``gs'' before installing. Another way is to type, as root:
+
+		#make update
+
+	I  used  really-instal instead  just install because  if someone who
+	wants to _update_ the system runs the _install_ script, he/she  will
+	not be able to run the hpgs because the old hpgs will  be renamed to
+	``gs-run'' and the  new hpgs  will  call the  old hpgs  instead  the
+	``gs'' command.
+
+
+2. USING
+--------
+
+	In the printtool,  install you printer using the  ``HP DeskJet 550C/
+	560C/6xxC series'' filter (driver).
+
+	To enable the EconoMode printing,  set the  ``Extra GS Options''  to
+	``-dDepletion=-1''. (You  can  set the print quality  by  seting the
+	-dDepletion to another value).
+
+	You can do something like this  with  linuxconf,  but it will not be
+	described here.
+
+
+3. CONTACT INFORMAION
+---------------------
+
+	If you have any problem or you want  to  tell me anything,  send  an
+	e-mail to mannrich@hotmail.com. My name is Ricardo.
+
+	My web site, with the latest version of this program is:
+
+		http://www.hpgs.cjb.net
+
+	Thank you for using my program.
+
+
+4. COPYING AND LICENSE
+----------------------
+
+	This program is copylefted software available free to  all under the
+	terms of the GNU General Public License (a copy of which should have
+	been included with this file). If you do not have a copy of the GPL, 
+	you can get one at GNU's web site (http://www.gnu.org).
+
+	See the COPYING file.

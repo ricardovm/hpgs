@@ -1,0 +1,61 @@
+<html>
+<head>
+  <title>hpgs - husk-le HP 6xx Series driver</title>
+</head>
+<body bgcolor="white" text="black" link="blue" alink="blue" vlink="blue">
+<p><img src="husk-le.gif" width=468 height=60 border=1></p>
+<h1>hpgs - husk-le HP 6xx Series Economic Driver</h1>
+<hr>
+<table border=0>
+  <tr>
+    <td valign="top" align="center">
+      <p><a href="#download"><img src="download.gif" width=32 height=32 border=0><br><small>Download hpgs</small></a></p>
+      <p><a href="#documentation"><img src="documentation.gif" width=32 height=32 border=0><br><small>Documentation</small></a></p>
+      <p><a href="#supported"><img src="printer.gif" width=32 height=32 border=0><br><small>Supported printers</small></a></p>
+      <p><a href="#distributions"><img src="penguin.gif" width=32 height=32 border=0><br><small>Supported distributions</small></a></p>
+      <p><a href="https://ricardovm.dev"><img src="home.gif" width=32 height=32 border=0><br><small>My Web Page<br>(Portuguese)</small></a></p>
+      <p><a href="https://github.com/ricardovm"><img src="mail.gif" width=32 height=32 border=0><br><small>Contact Me</small></a></p>
+      <hr>
+      <p>Hosted by:</p>
+      <p><a href="https://github.com/ricardovm/hpgs" target="_blank"><img src="github.png" width="88" height="36" border="0" alt="GitHub Logo"></a></p>
+    </td>
+    <td width="25">
+      <p>&nbsp;</p>
+    </td>
+    <td valign="top">
+      <h2><font color="red">hpgs 0.45 released!</font></h2>
+      <p><small>see <a href="CHANGELOG">CHANGELOG</a> for details.</small></p>
+      <p><small>hpgs 0.02 is obsolete and should not be used! If you are using hpgs 0.02, please, update to 0.45. <b>IMPORTANT:</b> Read the README file before update from 0.02 to 0.45.</small></p>
+      <h2>Introduction</h2>
+      <p>When I started using linux, I had a problem with my printer: the linux couldn't print using economic mode. I tryed to ask in discussion list and nothing. HOWTOs, and nothing. Then, I made my own printer driver: the <b>hpgs</b>.</p>
+      <p>This is not a driver. This is a front-end program that intercepts the GhostScript input, runs the GhostScript and translate the GhostScript output.</p>
+      <p>Now, I'm searching for helpers. I need someone to write the documentation and some beta-testers.</p>
+
+      <h2><a name="download">Download</a></h2>
+      <p>If you want to test the <b>hpgs</b> &quot;driver&quot; or you want to use it, first read the <a href="README">README</a>.</p>
+      <ul>
+        <li><a href="README">See the README file</a></li>
+        <li><a href="hpgs-0.45.tar.gz">Download hpgs 0.45</a></li>
+      </ul>
+      <p>It's available only the source code, but it's very easy to compile. You'll need only the glibc (devel), a C compiler (gcc or egcs) and the GNU make utility (gmake or make).</p>
+      <p>This software is under <a href="COPYING">GNU General Public License</a> and you can use, change and distribute freely (see the <a href="COPYING">COPYING</a> file).</p>
+
+      <h2><a name="documentation">Documentation</a></h2>
+      <p>See the <a href="README">README</a> file.</p>
+      <p>I'm trying to make a more helpful documentation, but I'm busy with other jobs now and I'm needing someone to write it.</p>
+
+      <h2><a name="supported">Supported printers</a></h2>
+      <p>I've tested <b>hpgs</b> on several HP 6xx Series printers, specialy on HP Deskjet 680C and HP Deskjet 692C. If you use <b>hpgs</b> with other printer or model, please, send me an e-mail and tell me what is your printer.</p>
+
+      <h2><a name="distributions">Supported distributions</a></h2>
+      <p>I made <b>hpgs</b> using <a href="http://www.conectiva.com">Conectiva Linux</a>, but I think it works on every RedHat-like distribution. If your distribution uses GhostScript to format printing, you can use <b>hpgs</b> too, but you'll need to verify the directories in Makefile (install section).</p>
+     </td>
+  </tr>
+</table>
+<hr>
+<p><small>The hpgs and this site is maintained by Ricardo V. Mannrich<br>
+Last update: Wed 12 Aug 2020 07:33:59 PM -03
+<br>
+Copyright &copy; 2000, 2001, 2020 Ricardo V. Mannrich.</small></p>
+</body>
+</html>

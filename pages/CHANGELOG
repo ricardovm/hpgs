@@ -1,0 +1,7 @@
+0.02:
+	First release!
+
+0.45:
+	Some bugfixes
+	Added the -sOutputFile=... functionality
+	Makefile changes
